@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/scr/css/sigin.css">
+</head>
+<body class="d-flex vh-100">
+    <div class="container">
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-6">
+                        <div class="header">
+        <div class="row">
+            <div class="col-auto d-flex flex-row">
+                <div style="padding-top: 20px;">
+                    <a href="/">
+                        <img src="/scr/img/logo-e-blue.svg" class="head-image mr-2" style="width: 50px" alt="">
+                    </a>
+                </div>
+                <div class="d-flex ">
+                    <h1 class="mb-3">Личный кабинет</h1>
+                </div>
+            </div>
+        </div>
+        <h2>Вход</h2>
+
+        <form class="form-horizontal" role="form" method="POST" action="https://lk.etu.ru/login">
+            <input type="hidden" name="_token" value="yptV0EEsjxYk53l3GAI25gWmZ9DCJ2KLDnWKIhHS">
+           
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control form-control-lg form-control-login mb-1" value="" required autofocus placeholder="Электронная почта">
+                        <a href="/forgot_login">Забыли логин?</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control form-control-lg form-control-login mb-1" placeholder="Пароль">
+                        <a href="https://lk.etu.ru/password/reset">Восстановление пароля</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" style="display: none;">
+                <div class="col-md-6 col-xs-12 col-md-offset-4">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="remember"> Remember Me
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-auto col-xs-12">
+                    <div class="form-group">
+                        <a href="/registration" class="btn btn-lg btn-outline-primary btn-login">Регистрация</a>
+                    </div>
+                </div>
+                <div class="col-auto ml-auto col-xs-12">
+                    <div class="form-group">
+                        <button data-eid="login" type="submit" class="btn btn-lg btn-primary btn-login">Войти</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col">
+                        <span class="text-right">
+                            <a href="mailto:webmaster@etu.ru">webmaster@etu.ru</a>
+                        </span>
+            </div>
+            <div class="col-auto">
+                        <span class="text-right">
+                            <a target="_blank" href="https://etu.ru">СПбГЭТУ «ЛЭТИ»</a>
+                        </span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</body>
+</html>

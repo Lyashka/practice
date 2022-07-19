@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/scr/css/sigin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                        <div class="mx-auto">
+                            <div class="my-md-5">
+                    <div class="card ">
+                        <div style="padding: 0rem 3rem; padding-top: 1rem;">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <a href="/">
+                                        <img src="/scr/img/logo-e-blue.svg" class="head-image" alt="">
+                                    </a>
+                                </div>
+                            <h1 class="mb-3">РЕГИСТРАЦИЯ</h1>
+                            </div> 
+                        </div>
+                        <div class="px-4 px-md-5 pb-4">
+                                
+
+    <ul class="nav nav-pills" id="registrationTabs" role="tablist" style="margin-bottom: 15px;">
+        <li class="nav-item active" role="presentation">
+            <a class="nav-link active" id="students-tab" data-toggle="tab" href="#students" role="tab" aria-controls="students" aria-selected="true" aria-expanded="true">Подразделение</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="workers-tab" data-toggle="tab" href="#workers" role="tab" aria-controls="workers" aria-selected="false" aria-expanded="false">Партнерам</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <!-- ФОРМА ДЛЯ ПОДРАЗДЕЛЕНИЯ -->
+        <div class="tab-pane active" id="students" role="tabpanel" aria-labelledby="students-tab">
+            <form>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" value="" required="" autofocus="" placeholder="E-MAIL зав. кафедры *">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Факультет *">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="ФИО зав. кафедры *" inputmode="text">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="rf_mobile" value="" data-inputmask="'mask': '+7-999-999-99-99'" class="form-control" placeholder="Телефон зав. кафедры" inputmode="text">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="password" autocomplete="new-password" required="" class="form-control" placeholder="Придумайте пароль *">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-auto ml-auto col-xs-12">
+                        <div class="form-group">
+                            <button data-eid="register" type="submit" class="btn btn-lg btn-primary btn-login">Зарегистрироваться</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> 
+        <!-- ФОРМА ДЛЯ ПАРТНЕРА -->
+        <div class="tab-pane hidden">
+            <form>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text"  class="form-control" placeholder="Название *">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" value="" required="" autofocus="" placeholder="E-MAIL *">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="rf_mobile"  class="form-control" placeholder="Телефон *" inputmode="text">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name=""  class="form-control" placeholder="Тип партнераства *" inputmode="text">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="password" autocomplete="new-password" required="" class="form-control" placeholder="Придумайте пароль *">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-auto ml-auto col-xs-12">
+                        <div class="form-group">
+                            <button data-eid="register" type="submit" class="btn btn-lg btn-primary btn-login">Зарегистрироваться</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <span class="text-right">
+                                <a href="mailto:webmaster@etu.ru">webmaster@etu.ru</a>
+                            </span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="text-right">
+                                <a target="_blank" href="https://etu.ru">СПбГЭТУ «ЛЭТИ»</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
