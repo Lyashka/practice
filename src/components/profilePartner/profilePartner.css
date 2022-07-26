@@ -1,0 +1,138 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  
+}
+
+* {
+    outline: none!important;
+}
+
+body {
+    line-height: 1.5;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+div {
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.wdth{
+    max-width: 1120px;
+}
+
+.headerPartner {
+    display: flex;
+    height: 60px;
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.head-image {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    width: 50px;
+}
+
+.hd1{
+    display: flex;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.hd2{
+    display: flex;
+    
+}
+
+.contentPatner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color:rgb(250, 250, 250);
+    border: 1.5px rgba(0, 0, 0, 0.1) solid;
+    border-radius:5px;
+    padding: 25px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.10)!important;
+}
+
+.cont1{
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.cont2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cont1_itm{
+    padding-right: 10px;
+}
+
+.short{
+    color:rgb(112, 112, 112);
+}
+
+.flex_rovv{
+    display: flex;
+    flex-direction: row;
+}
+
+.input{
+    display: flex;
+    font-size: 22px;
+    border-radius: 10px;
+    border:1px rgba(0, 0, 0, 0.103) solid;
+    padding-left: 10px;
+    margin-top: 5px;
+    height: 40px;
+    background-color:rgba(255, 255, 255, 0.801);
+}
+
+.save{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+    margin-top: 10px;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.save_btn{
+    font-size: 20px;
+    background-color:#4582ec;
+    color: #fff;
+    border: 2px rgba(0, 0, 0, 0.11) solid;
+    border-radius: 5px;
+    padding: 7px 40px 7px 40px;
+    transition: 0.3s;
+    
+}
+
+.save_btn:hover{
+    background-color:#2064da;
+    cursor: pointer;
+}
+
+.txtari{
+    border:1px rgba(0, 0, 0, 0.103) solid;
+    margin-top: 15px;
+    border-radius:10px;
+    padding: 10px;
+}

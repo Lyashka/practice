@@ -1,11 +1,14 @@
 import React from "react";
 import './sign.css'
 
+
 import {useState, useEffect} from 'react'
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+
 import emblemLeti from './logo-e-blue.svg'
 
 
-function Sign() {
+export const Sign = ({data, onChange}) => {
 
     //hooks
     const [email, setEmail] = useState('');
@@ -15,8 +18,12 @@ function Sign() {
     const [emailError, setEmailError] = useState('Емейл не может быть пустым');
     const [passwordError, setPasswordError] = useState('Пароль не может быть пустым');
     const [formValid, setFormValid] = useState(false)
+    const [linkOnMainMenu, setLinkOnMainMenu] = useState()
+    const [itemPers, setItemPers] = useState(data)
 
+    
     useEffect(()=>{
+       
         if(emailError || passwordError){
             setFormValid(false)
         }
@@ -61,6 +68,29 @@ function Sign() {
         }
     }
 
+     
+    const onSign = (e) => {
+        // e.preventDefault();
+        console.log('sign');
+        data.map(function(item) {
+            
+                if(item.Email === email && item.password === password) {
+                    console.log('true');
+                    setLinkOnMainMenu('/mainMenu')
+                    setItemPers(item)
+                    onChange(()=>item); 
+                    window.localStorage.setItem('itemPers', JSON.stringify(item))
+                
+                }else{
+                    console.log('false')
+                }
+              
+            }
+        )
+    }
+    // const pers = itemPers;
+    // console.log("Item pers: ")
+    // console.log(pers);
     return(
         <>
                 <div className="d-flex vh-100">
@@ -134,7 +164,7 @@ function Sign() {
                                         <div className="col-auto ml-auto col-xs-12">
                                             <div className="form-group">
                                                 <button disabled={!formValid} data-eid="login" type="submit"
-                                                    className="btn btn-lg btn-primary btn-login"><a href="/mainmenu">Войти</a></button>
+                                                    className="btn btn-lg btn-primary btn-login"><a href={linkOnMainMenu} onClick={onSign} >Войти</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -144,7 +174,7 @@ function Sign() {
                     </div>
                 </div>
             </div>
-              
+         
         </>
     )
 }
