@@ -122,14 +122,14 @@ header,
     overflow-x: hidden;
     position: inherit!important;
 }
-.content{
+/* .contentMainMenu{
     width: 87.5%;
     height:100%;
     margin-top: 60px;
     margin-left: 240px;
     position:fixed;
     z-index: 0;
-}
+} */
 .table{
    
     z-index: 0;

@@ -3,33 +3,48 @@ import './mainMenu.css'
 import emblemLeti from './logo-e-blue.svg'
 import profEmblem from './img.png'
 import {useState, useEffect} from 'react'
+import Agreements from "../agreements/agreements";
+import Structures from "../structures/structures";
 
-function MainMenu({itemPers}) {
+function MainMenu() {
 
-  const [pers, setPers] = useState(JSON.parse(window.localStorage.getItem('itemPers')))
-  const [category, setCategory] = useState(); 
+  const [choice, setChoice] = useState(<Agreements/>);
+  const [viewprofile, setViewProfile] = useState('')
+  const [viewSidedrawer, setViewSidedrawer] = useState('')
 
-  console.log(pers)
-  useEffect(()=>{
+  const onOpenWindowProfile = () => {
+    if(viewprofile === '') {
+      setViewProfile(<ViewWindowPrifile/>)
+    }
+    else{
+      setViewProfile('')
+    }
+  }
+
+  const onOpen = (value) => {
+    setChoice(value)
+  }
+
+  const onOpenSidedrawer = () => {
+    if(viewSidedrawer===''){
+      setViewSidedrawer(<ViewSidedrawer onChange={onOpen}/>)
+    }
+    else{
+      setViewSidedrawer('')
+    }
+  }
+
   
-  },[pers])
-
-
-const onChoiceCategory = () => {
-  if(pers.kategory === 'subdivision'){
-    setCategory('/profileLetiSub')
+  const onOpenStructures = () => {
+    setChoice(<Structures/>)
   }
-  else{
-    setCategory('/profilePartner')
-  }
-}
 
 
     return(
         <>
       <div className="body-clean">
-
-        <div className="content">
+       
+        <div className="contentMainMenu"> {choice}
           <div className="table"></div>
           <div></div>
           <div></div>
@@ -39,7 +54,7 @@ const onChoiceCategory = () => {
           <div className="containerMainMenu">
             <div className="styleDisplay">
               <div className="styleHeight">
-                <button className="menu"><a className="side">☰</a></button>
+                <button className="menu side" onClick={onOpenSidedrawer}>☰</button>
               </div>
               <div>
                 <img src={emblemLeti} className="head-image-main-menu" alt="#" />
@@ -47,24 +62,74 @@ const onChoiceCategory = () => {
             </div>
             
             <ul>
-              <div><button className="prof"><img src={profEmblem} className="styleImg" alt=""/></button></div>
-                <div className="dwn-menu">
-                  <div className="dwn-itm">{pers.name}</div>
-                  <div className="dwn-itm ml">{pers.Email}</div>
-                  <a className="dwn-itm prf btExit" href={category} onClick={onChoiceCategory}>Akk</a>
-                  <a className="dwn-itm prf btExit" href='/'>Выйти</a>
-                </div>  
+              <div><button className="prof"><img src={profEmblem} className="styleImg" alt="" onClick={onOpenWindowProfile}/></button></div>
+
+                {viewprofile}
+
             </ul>
           </div>
-        </div>
+          </div>
+              <div>
+              {viewSidedrawer}
+              </div>
+          </div>
+        </>
+    )
+}
+export default MainMenu;
 
-        <div className="sidedrawer">
+
+
+
+
+
+
+function ViewWindowPrifile(){
+  const [pers, setPers] = useState(JSON.parse(window.localStorage.getItem('itemPers')))
+  const [category, setCategory] = useState(); 
+  const onChoiceCategory = () => {
+    if(pers.kategory === 'subdivision'){
+      setCategory('/profileLetiSub')
+    }
+    else{
+      setCategory('/profilePartner')
+    }
+  }
+  return(
+    <>
+      <div className="dwn-menu">
+          <div className="dwn-itm">{pers.name}</div>
+          <div className="dwn-itm ml">{pers.Email}</div>
+          <a className="dwn-itm prf btExit" href={category} onClick={onChoiceCategory}>Akk</a>
+          <a className="dwn-itm prf btExit" href='/'>Выйти</a>
+        </div>  
+    </>
+  )
+}
+
+
+
+
+
+
+function ViewSidedrawer({onChange}) {
+ 
+  const onOpenStructures = () => {
+    onChange(<Structures/>)
+  }
+  const onOpenAgreement = () => {
+    onChange(<Agreements/>)
+  }
+
+  return(
+    <>
+    <div className="sidedrawer">
           <ul className="styleInline">
             <li>
-              <button className="bt">Соглашения</button>
+              <button className="bt" onClick={onOpenAgreement}>Соглашения</button>
             </li>
             <li>
-              <button className="bt">Совместные структуры</button>        
+              <button className="bt" onClick={onOpenStructures}>Совместные структуры</button>        
             </li>
             <li>
               <button className="bt">Взаимодействия</button>        
@@ -74,8 +139,6 @@ const onChoiceCategory = () => {
             </li>
           </ul>
         </div> 
-      </div>
-        </>
-    )
+    </>
+  )
 }
-export default MainMenu;
