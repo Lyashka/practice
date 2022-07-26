@@ -116,7 +116,7 @@ body {
 
 .form-control:focus{
     box-shadow:0 0 0 2.5px #0368e448;
-    border:1px solid #004497;
+    border:1px #004497 solid;
     transition: all 0.2s linear;
     animation-direction: normal, reverse;
 }
