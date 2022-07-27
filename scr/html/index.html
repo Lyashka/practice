@@ -11,7 +11,7 @@
   <div class="body-clean">
 
     <!-- Соглашения -->
-    <div class="content" style="visibility: hidden;">
+    <div class="content" >
       <div class="table">
         <div>
           <div class="deal">
@@ -56,14 +56,15 @@
         
       </div>
       <div class="agreement">
-        <div class="agreement_cont" style="border-right: 1.5px rgba(0, 0, 0, 0.11) solid;">
+        <div class="agreement_cont">
+          <div class=" agr_widt"><button class="add">Создать соглашение</button> </div>
           <div>
-            <div class="agree_tab">
+            <div class="agree_tab" style="height: 60px;border-top: 2px solid rgba(54,64,74,.15);">
               <button class="agree_itm fnt hv" style="padding-left: 6px;">Сторона соглашения</button>
               <button class="agree_itm fnt hv">Тип соглашения</button>
               <button class="fnt hv">Принять/Отклонить</button>
             </div>
-            <div class="agree_tab" style="height: 50px;">
+            <div class="agree_tab" style="height: 50px;border-top: 2px solid rgba(54,64,74,.15);">
               <button class="bt_deal hv">
                 <div class="agree_itm">Вид структуры</div>
                 <div class="agree_itm" style="padding-left: 18px;">Короткое название</div>
@@ -73,16 +74,15 @@
             </div>
           </div>
         </div>
-        <div class="agreement_cont agr_widt"><button class="add">Создать соглашение</button>
-          <div class="add_agree">
-            <input type="text" placeholder="Тип соглашения" class="form-control" required >
-            <input type="data" placeholder="Дата" class="form-control" required>
-            <input type="text" placeholder="Партнеры" class="form-control" required>
-            <input type="text" placeholder="Контакты партнеров" class="form-control" required>
-            <input type="text" placeholder="Подразделения" class="form-control" required>
-            <input type="text" placeholder="Контакты подразделений" class="form-control" required>
-          </div>
-        </div>
+      </div>
+      <div class="add_agree">
+        <input type="text" placeholder="Тип соглашения" class="form-control" required >
+        <input type="data" placeholder="Дата" class="form-control" required>
+        <input type="text" placeholder="Партнеры" class="form-control" required>
+        <input type="text" placeholder="Контакты партнеров" class="form-control" required>
+        <input type="text" placeholder="Подразделения" class="form-control" required>
+        <input type="text" placeholder="Контакты подразделений" class="form-control" required>
+        <button class="add agr_widt">Создать соглашение</button>
       </div>
     </div>
 
@@ -125,9 +125,10 @@
 
       </div>
       <div class="agreement">
-        <div class="agreement_cont" style="border-right: 1.5px rgba(0, 0, 0, 0.11) solid;">
+        <div class="agreement_cont">
+          <div class=" agr_widt"><button class="add">Создать Структуру</button> </div>
           <div >
-            <div class="agree_tab" style="height: 60px;">
+            <div class="agree_tab" style="height: 60px; border-top: 2px solid rgba(54,64,74,.15);">
               <button class="agree_itm fnt hv" style="padding-left: 6px;">Вид структуры</button>
               <button class="agree_itm fnt hv">Короткое название</button>
               <button class="fnt hv">Принять/Отклонить</button>
@@ -142,15 +143,15 @@
             </div>
           </div>
         </div>
-        <div class="agreement_cont agr_widt"><button class="add">Создать соглашение</button>
-          <div class="add_agree">
-            <input type="text" placeholder="Тип соглашения" class="form-control" required >
-            <input type="data" placeholder="Дата" class="form-control" required>
-            <input type="text" placeholder="Партнеры" class="form-control" required>
-            <input type="text" placeholder="Подразделения" class="form-control" required>
-            <input type="text" placeholder="Руководитель" class="form-control" required>
-          </div>
-        </div>
+        
+      </div>
+      <div class="add_agree">
+        <input type="text" placeholder="Тип соглашения" class="form-control" required >
+        <input type="data" placeholder="Дата" class="form-control" required>
+        <input type="text" placeholder="Партнеры" class="form-control" required>
+        <input type="text" placeholder="Подразделения" class="form-control" required>
+        <input type="text" placeholder="Руководитель" class="form-control" required>
+        <button class="add agr_widt">Создать Структуру</button>
       </div>
     </div>
 
@@ -197,9 +198,10 @@
 
       </div>
       <div class="agreement">
-        <div class="agreement_cont" style="border-right: 1.5px rgba(0, 0, 0, 0.11) solid;">
+        <div class="agreement_cont">
+          <div class=" agr_widt"><button class="add">Создать Взаимодействие</button> </div>
           <div >
-            <div class="agree_tab" style="height: 60px;">
+            <div class="agree_tab" style="height: 60px; border-top: 2px solid rgba(54,64,74,.15);">
               <button class="agree_itm fnt hv" style="padding-left: 6px;">Вид взаимодействия</button>
               <button class="agree_itm fnt hv">Тема</button>
               <button class="fnt hv">Принять/Отклонить</button>
@@ -214,9 +216,9 @@
             </div>
           </div>
         </div>
-        <div class="agreement_cont agr_widt"><button class="add">Создать соглашение</button>
-          <div class="add_agree">
-            <input type="text" placeholder="Вид взаимодействия" class="form-control" required >
+      </div>
+      <div class="add_agree">
+        <input type="text" placeholder="Вид взаимодействия" class="form-control" required >
             <input type="data" placeholder="Срок договора" class="form-control" required>
             <input type="text" placeholder="Тема" class="form-control" required>
             <input type="text" placeholder="Основное направление разработки" class="form-control" required>
@@ -224,13 +226,12 @@
             <input type="text" placeholder="Партнеры" class="form-control" required>
             <input type="text" placeholder="Подразделения" class="form-control" required>
             <input type="text" placeholder="Руководитель" class="form-control" required>
-          </div>
-        </div>
+        <button class="add agr_widt">Создать Взаимодействие</button>
       </div>
     </div>
 
     <!-- Мероприятия -->
-    <div class="content">
+    <div class="content" style="visibility: hidden;">
       <div class="table">
         <div>
           <div class="deal" style="height: 60px;">
@@ -268,14 +269,15 @@
 
       </div>
       <div class="agreement">
-        <div class="agreement_cont" style="border-right: 1.5px rgba(0, 0, 0, 0.11) solid;">
+        <div class="agreement_cont">
+          <div class=" agr_widt"><button class="add">Создать мероприятие</button> </div>
           <div >
-            <div class="agree_tab" style="height: 60px;">
+            <div class="agree_tab" style="height: 60px; border-top: 2px solid rgba(54,64,74,.15);">
               <button class="agree_itm fnt hv" style="padding-left: 6px;">Название</button>
               <button class="agree_itm fnt hv">Тип</button>
               <button class="fnt hv">Принять/Отклонить</button>
             </div>
-            <div class="agree_tab" style="height: 50px;">
+            <div class="agree_tab" style="height: 50px; ">
               <button class="bt_deal hv">
                 <div class="agree_itm">Вид структуры</div>
                 <div class="agree_itm" style="padding-left: 18px;">Короткое название</div>
@@ -285,17 +287,16 @@
             </div>
           </div>
         </div>
-        <div class="agreement_cont agr_widt"><button class="add">Создать соглашение</button>
-          <div class="add_agree">
-            <input type="text" placeholder="Название Мероприятия" class="form-control" required >
-            <input type="text" placeholder="Тип" class="form-control" required >
-            <input type="data" placeholder="Дата" class="form-control" required>
-            <input type="text" placeholder="Партнеры" class="form-control" required>
-            <input type="text" placeholder="Подразделения" class="form-control" required>
-            <input type="text" placeholder="Результат" class="form-control" required>
-          </div>
-        </div>
       </div>
+        <div class="add_agree">
+          <input type="text" placeholder="Название Мероприятия" class="form-control" required >
+          <input type="text" placeholder="Тип" class="form-control" required >
+          <input type="data" placeholder="Дата" class="form-control" required>
+          <input type="text" placeholder="Партнеры" class="form-control" required>
+          <input type="text" placeholder="Подразделения" class="form-control" required>
+          <input type="text" placeholder="Результат" class="form-control" required>
+          <button class="add agr_widt">Создать соглашение</button>
+        </div>
     </div>
 
   <div class="head " id="header">
