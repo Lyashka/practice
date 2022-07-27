@@ -48,6 +48,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.add:hover{
+    background-color: #03244d;
 }
 
 .agreement_cont{
@@ -61,7 +66,6 @@
     display: flex;
     border-bottom: 2px solid rgba(54,64,74,.15);
     width: 100%;
-    height: 60px;
     flex-wrap: nowrap;
 }
 
@@ -76,15 +80,26 @@
 }
 
 .agree_itm{
+    display: flex;
     font-size: 13px;
     width: 100%;
+    text-align: left;
+    padding-left: 0;
+    height: 50px;
+    align-items:center;
+}
+
+.agree_bt{
+    margin: 5px;
+    width: 48px;
+    border-radius:100px;
+    border:0;
 }
 
 .deal{
     display: flex;
     border-bottom: 2px solid rgba(54,64,74,.15);
-    width: auto ;
-    height: 60px;
+    width: auto;
     margin-left: 20px;
     margin-right: 20px;
     align-items: center;
@@ -103,7 +118,7 @@
     padding-left: 30px;
     padding-right: 6px;
     text-align: left;
-    width: 45%;
+    width: 52%;
 }
 
 .status{
@@ -116,7 +131,7 @@
 
 .data{
     font-size: 20px;
-    width: 20%;
+    width: 16%;
     text-align: left;
     padding-right: 6px;
     padding-left: 6px;
@@ -135,11 +150,40 @@
     background-color:inherit;
     border:none;
     width: 100%;
-    padding: 0;
-    height: 100%;
     align-items: center;
+}
+
+.dop{
+    border: 2px solid rgba(54,64,74,.15);
+    border-bottom:0;
+    display: flex;
+    background-color: inherit;
+    width: 100%;
+}
+
+.dop_itm{
+    width: 100%;
 }
 
 .hv:hover{
     background-color:rgb(245, 245, 245);
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    width: 88%;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    margin-bottom: 0;
+    outline: none;
+}
+
+.form-control:focus{
+    box-shadow:0 0 0 2.5px #0368e448;
+    border:1px solid #004497;
+    transition: all 0.2s linear;
+    animation-direction: normal, reverse;
 }

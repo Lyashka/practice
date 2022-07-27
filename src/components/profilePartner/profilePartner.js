@@ -33,7 +33,7 @@ function ProfilePartner() {
         <div className="flex_rovv wdth">
         <div className="cont2" style={{paddingRight: "50px"}}>
           <div style={{fontSize: "20px"}}>Почта</div>
-          <input type="email" placeholder="Mail" className="input" value={pers.Email}/>
+          <input type="email" placeholder="Mail" className="input" defaultValue={pers.Email}/>
         </div>
         <div className="cont2">
           <div  style={{fontSize: "20px"}}>Телефон</div>

@@ -10,7 +10,7 @@ import ProfilePartner from './components/profilePartner/profilePartner';
 
 import {useState, useEffect} from 'react'
 
-import {BrowserRouter, Route, Routes,HashRouter} from 'react-router-dom';
+import {BrowserRouter, Route, Routes, HashRouter} from 'react-router-dom';
 
 function App() {
 

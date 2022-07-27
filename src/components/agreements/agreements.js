@@ -35,18 +35,30 @@ function Agreements() {
       </div>
       <div className="agreement">
         <div className="agreement_cont" style={{borderRight: "1.5px rgba(0, 0, 0, 0.11) solid"}}>
-          <div className="agree_tab">
+          <div>
             <div className="agree_tab">
-              <button className="agree_itm fnt hv">Сторона соглашения</button>
+              <button className="agree_itm fnt hv" style={{paddingLeft: "6px"}}>Сторона соглашения</button>
               <button className="agree_itm fnt hv">Тип соглашения</button>
-              <button className="agree_itm fnt hv">Принять/Отклонить</button>
+              <button className="fnt hv">Принять/Отклонить</button>
             </div>
-            <div></div>
+            <div className="agree_tab" style={{height: "50px"}}>
+              <div className="bt_deal hv">
+                <div className="agree_itm">Вид структуры</div>
+                <div className="agree_itm" style={{paddingLeft: "18px"}}>Короткое название</div>
+                <button className="agree_bt hv">+</button>
+                <button className="agree_bt hv">-</button>
+              </div>
+            </div>
           </div>
         </div>
         <div className="agreement_cont agr_widt"><button className="add">Создать соглашение</button>
           <div className="add_agree">
-
+            <input type="text" placeholder="Тип соглашения" className="form-control" required />
+            <input type="data" placeholder="Дата" className="form-control" required/>
+            <input type="text" placeholder="Партнеры" className="form-control" required/>
+            <input type="text" placeholder="Контакты партнеров" className="form-control" required/>
+            <input type="text" placeholder="Подразделения" className="form-control" required/>
+            <input type="text" placeholder="Контакты подразделений" className="form-control" required/>
           </div>
         </div>
       </div>
