@@ -23,33 +23,59 @@
           </div>
         </div>
         <div class="deal" style="flex-direction: column;">
-          <button class="bt_deal hv">
+          <button class="bt_deal hv" style="height: 50px;">
             <div class="num">13</div>
             <div class="type"style="padding-left: 33px;">Обоюдное</div>
             <div class="data">11.01.11</div>
             <div class="data">11.11.11</div>
-            <div class="status">Активен</div>
+            <div class="status">Активен
+              <!-- <ul>
+                <div class="status_bt" style="visibility: hidden;">
+                  <button>Действующий</button>
+                  <button>Завершен</button>
+                  <button>Продлен</button>
+                </div>
+              </ul> -->
+            </div>
           </button>
           <div class="dop">
             <div class="dop_itm" style="padding-left: 12px;">
-              <div style="padding-bottom: 6px; font-weight: 600; font-size: 15px;">Партнеры</div>
+              <div style="padding-bottom: 6px; font-weight: 600; font-size: 15px;">Партнеры:</div>
               <div>rrr</div>
               <div>rrr</div>
             </div>
             <div class="dop_itm">
-              <div style="padding-bottom: 6px; font-weight: 600; font-size: 15px;">Контакты партнеров</div>
+              <div style="padding-bottom: 6px; font-weight: 600; font-size: 15px;">Контакты партнеров:</div>
               <div>123</div>
               <div>123</div>
             </div>
             <div class="dop_itm">
-              <div style="padding-bottom: 6px; font-weight: 600; font-size: 15px;">Подразделения</div>
+              <div style="padding-bottom: 6px; font-weight: 600; font-size: 15px;">Подразделения:</div>
               <div>rrr</div>
               <div>rrr</div>
             </div>
             <div class="dop_itm">
-              <div style="padding-bottom: 6px; font-weight: 600; font-size: 15px;">Контакты подразделений</div>
+              <div style="padding-bottom: 6px; font-weight: 600; font-size: 15px;">Контакты подразделений:</div>
               <div>123</div>
               <div>123</div>
+            </div>
+            <div class="dop_itm" >
+              <div style="padding-bottom: 6px; font-weight: 600; font-size: 15px;">Статус:</div>
+              <div>
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Активен
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Завершен
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Продлен
+                </label>
+              </div>
             </div>
           </div>  
         </div>
@@ -75,14 +101,14 @@
           </div>
         </div>
       </div>
-      <div class="add_agree">
+      <div class="add_agree" >
         <input type="text" placeholder="Тип соглашения" class="form-control" required >
         <input type="data" placeholder="Дата" class="form-control" required>
         <input type="text" placeholder="Партнеры" class="form-control" required>
         <input type="text" placeholder="Контакты партнеров" class="form-control" required>
         <input type="text" placeholder="Подразделения" class="form-control" required>
         <input type="text" placeholder="Контакты подразделений" class="form-control" required>
-        <button class="add agr_widt">Создать соглашение</button>
+        <button class="add" style="width: auto;">Создать соглашение</button>
       </div>
     </div>
 
@@ -151,7 +177,7 @@
         <input type="text" placeholder="Партнеры" class="form-control" required>
         <input type="text" placeholder="Подразделения" class="form-control" required>
         <input type="text" placeholder="Руководитель" class="form-control" required>
-        <button class="add agr_widt">Создать Структуру</button>
+        <button class="add " style="width: auto;">Создать Структуру</button>
       </div>
     </div>
 
@@ -226,7 +252,7 @@
             <input type="text" placeholder="Партнеры" class="form-control" required>
             <input type="text" placeholder="Подразделения" class="form-control" required>
             <input type="text" placeholder="Руководитель" class="form-control" required>
-        <button class="add agr_widt">Создать Взаимодействие</button>
+        <button class="add" style="width: auto;">Создать Взаимодействие</button>
       </div>
     </div>
 
@@ -295,7 +321,7 @@
           <input type="text" placeholder="Партнеры" class="form-control" required>
           <input type="text" placeholder="Подразделения" class="form-control" required>
           <input type="text" placeholder="Результат" class="form-control" required>
-          <button class="add agr_widt">Создать соглашение</button>
+          <button class="add" style="width: auto;">Создать соглашение</button>
         </div>
     </div>
 
@@ -322,7 +348,7 @@
   </div>
 
   <div class="sidedrawer">
-    <ul style="display:inline;">
+    <ul style="display:inline; background-color: #37383a;">
       <li>
         <button class="bt">Соглашения</иг>
       </li>
