@@ -265,6 +265,15 @@ header,
     z-index: 11;
 }
 
+@keyframes ani {
+    0% {transform: translateY(-150%);}
+    100% {transform: translateY(0);}
+  } 
+  .add_agree {
+    transform: translateY(-150%);
+    animation: ani 0.5s forwards;
+  }
+
 @media (max-width: 1500px){.add_agree {margin-left: 20%;}}
 @media (max-width: 950px){.add_agree {margin-left: 13%;}}
 
