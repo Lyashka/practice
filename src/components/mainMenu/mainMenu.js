@@ -5,6 +5,8 @@ import profEmblem from './img.png'
 import {useState, useEffect} from 'react'
 import Agreements from "../agreements/agreements";
 import Structures from "../structures/structures";
+import Interactions from "../interactions/interactions";
+import Events from "../eventss/events";
 
 function MainMenu() {
 
@@ -42,10 +44,10 @@ function MainMenu() {
 
     return(
         <>
-      <div className="body-clean">
+      {/* <div className="body-clean"> */}
        
         <div className="contentMainMenu"> {choice}
-          <div className="table"></div>
+          {/* <div className="table"></div> */}
           <div></div>
           <div></div>
         </div>
@@ -72,7 +74,7 @@ function MainMenu() {
               <div>
               {viewSidedrawer}
               </div>
-          </div>
+          {/* </div> */}
         </>
     )
 }
@@ -120,6 +122,12 @@ function ViewSidedrawer({onChange}) {
   const onOpenAgreement = () => {
     onChange(<Agreements/>)
   }
+  const onOpenInteractions = () => {
+    onChange(<Interactions/>)
+  }
+  const onOpenEvents = () => {
+    onChange(<Events/>)
+  }
 
   return(
     <>
@@ -132,10 +140,10 @@ function ViewSidedrawer({onChange}) {
               <button className="bt" onClick={onOpenStructures}>Совместные структуры</button>        
             </li>
             <li>
-              <button className="bt">Взаимодействия</button>        
+              <button className="bt" onClick={onOpenInteractions}>Взаимодействия</button>        
             </li>
             <li>
-              <button className="bt">Мероприятия</button>        
+              <button className="bt" onClick={onOpenEvents}>Мероприятия</button>        
             </li>
           </ul>
         </div> 
