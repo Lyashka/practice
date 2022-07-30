@@ -21,7 +21,7 @@ function Events() {
       <div className="tableEvent">
         <div>
           <div className="deal" style={{height: "60px"}}>
-            <button className="kind fnt hv" style={{paddingLeft: "12px"}}>Название</button>
+            <button className="kind fnt hv" style={{paddingLeft: "6px"}}>Название</button>
             <button className="name fnt hv">Тип</button>
             <button className="short_name fnt hv">Результат</button>
             <button className="data fnt hv">Дата</button>
@@ -65,13 +65,13 @@ function Events() {
             <div className="agree_tabEvent" style={{flexDirection: "column"}}>
               <div className="agree_tabEvent">
               <div className="bt_deal hv">
-                <div className="agree_itm">Вид структуры</div>
-                <div className="agree_itm" style={{paddingLeft: "18px"}}>Короткое название</div>
+                <div className="agree_itm" style={{paddingLeft: "6px"}}>Вид структуры</div>
+                <div className="agree_itm" >Короткое название</div>
                 <button className="agree_bt hv">+</button>
                 <button className="agree_bt hv">-</button>
               </div>
               </div>
-              <div className="dopEvent" style={{border: "none!important"}}>
+              <div className="dopEvent" style={{border: "0"}}>
                 <div className="dop_itmEvent" style={{paddingLeft: "12px"}}>
                   <div style={{paddingBottom: "6px", fontWeight: "600", fontSize:"15px"}}>Партнеры</div>
                   <div>rrr</div>

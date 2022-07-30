@@ -21,7 +21,7 @@ function Structures() {
       <div className="tableStructures">
         <div>
           <div className="deal" style={{height: "60px"}}>
-            <button className="kind fnt hv" style={{paddingLeft: "12px"}}>Вид структуры</button>
+            <button className="kind fnt hv" style={{paddingLeft: "6px"}}>Вид структуры</button>
             <button className="name fnt hv">Полное название</button>
             <button className="short_name fnt hv">Короткое название</button>
             <button className="data fnt hv">Дата</button>
@@ -29,9 +29,9 @@ function Structures() {
         </div>
         <div className="deal" style={{flexDirection: "column"}}>
           <div className="bt_deal hv" style={{height: "50px"}}>
-            <div className="kind">Кристаллическая</div>
-            <div className="name" style={{paddingLeft: "13px"}}>Бженшистикевич</div>
-            <div className="short_name" style={{paddingLeft: "13px"}}>GJB</div>
+            <div className="kind" style={{paddingLeft: "6px"}}>Кристаллическая</div>
+            <div className="name" style={{paddingLeft: "5px"}}>Бженшистикевич</div>
+            <div className="short_name" style={{paddingLeft: "5px"}}>GJB</div>
             <div className="data">11.11.11</div>
           </div>
           <div className="dopStr">
@@ -60,21 +60,21 @@ function Structures() {
           <div >
             <div className="agree_tab" style={{height: "60px", borderTop: "2px solid rgba(54,64,74,.15)"}}>
               <button className="agree_itm fnt hv" style={{paddingLeft: "6px"}}>Вид структуры</button>
-              <button className="agree_itm fnt hv">Полное название</button>
-              <button className="agree_itm fnt hv">Короткое название</button>
+              <button className="agree_itm fnt hv" style={{paddingLeft: "12px"}}>Полное название</button>
+              <button className="agree_itm fnt hv" style={{paddingLeft: "16px"}}>Короткое название</button>
               <button className="fnt hv">Принять/Отклонить</button>
             </div>
             <div className="agree_tab" style={{flexDirection: "column"}}>
               <div className="agree_tab">
               <div className="bt_deal hv">
-                <div className="agree_itm">Вид структуры</div>
-                <div className="agree_itm" style={{paddingLeft: "18px"}}>Бженшистикевич</div>
-                <div className="agree_itm" style={{paddingLeft: "18px"}}>GJB</div>
+                <div className="agree_itm" style={{paddingLeft: "6px"}}>Вид структуры</div>
+                <div className="agree_itm" >Бженшистикевич</div>
+                <div className="agree_itm" >GJB</div>
                 <button className="agree_bt hv">+</button>
                 <button className="agree_bt hv">-</button>
               </div>
               </div>
-              <div className="dopStr" style={{border: "none!important"}}>
+              <div className="dopStr" style={{border: "0"}}>
                 <div className="dop_itm" style={{paddingLeft: "12px"}}>
                   <div style={{paddingBottom: "6px", fontWeight: "600", fontSize: "15px"}}>Партнеры</div>
                   <div>rrr</div>
