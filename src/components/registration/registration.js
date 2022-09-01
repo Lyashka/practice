@@ -58,11 +58,14 @@ function RegChoice() {
                         <div className="mx-auto">
                             <div className="my-md-5">
                     <div className="card ">
-                        <div>
+                        <div style={{padding: "0rem 3rem",paddingTop: "1rem"}}>
                             <div className="row">
                                 <div className="col-auto">
                                     <a href="/">
-                                        <img src={emblemLeti} className="head-image" alt=""/>
+                                        <div style={{padding: "20px"}}>
+                                            <img src={emblemLeti} className="head-img" alt=""/>
+                                        </div>
+                                        
                                     </a>
                                 </div>
                             <h1 className="mb-3">РЕГИСТРАЦИЯ</h1>

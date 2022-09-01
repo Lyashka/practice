@@ -101,9 +101,9 @@ export const Sign = ({data, onChange}) => {
                     <div className="header">
                         <div className="row">
                         <div className="col-auto d-flex flex-row">
-                            <div>
+                            <div style={{paddingTop:"20px"}}>
                                 <a href="/">
-                                    <img src={emblemLeti} className="head-image mr-2" alt=""/>
+                                    <img src={emblemLeti} className="head-img mr-2" alt=""/>
                                 </a>
                             </div>
                             <div className="d-flex ">
@@ -158,13 +158,13 @@ export const Sign = ({data, onChange}) => {
                                         <div className="col-auto col-xs-12">
                                             <div className="form-group">
                                                 <a href="/registration"
-                                                    className="btn btn-lg btn-outline-primary btn-login">Регистрация</a>
+                                                    className="btn btn-lg">Регистрация</a>
                                             </div>
                                         </div>
                                         <div className="col-auto ml-auto col-xs-12">
                                             <div className="form-group">
                                                 <button disabled={!formValid} data-eid="login" type="submit"
-                                                    className="btn btn-lg btn-primary btn-login"><a href={linkOnMainMenu} onClick={onSign} >Войти</a></button>
+                                                    className="btn btn-lg"><a href={linkOnMainMenu} onClick={onSign} className="btn-lg">Войти</a></button>
                                             </div>
                                         </div>
                                     </div>

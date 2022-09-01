@@ -183,7 +183,7 @@ body {
     text-decoration: none;
 }
 
-.head-image {
+.head-img {
     display: inline-block;
     height: auto;
     max-width: 100%;
@@ -192,7 +192,7 @@ body {
 
 .mb-3{
     padding-left: 1rem;
-    padding-top: 6px;
+    padding-top: 18px;
     font-family: Open Sans Condensed,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 500;
 }

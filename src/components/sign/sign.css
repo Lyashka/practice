@@ -142,6 +142,12 @@ body {
     vertical-align: middle;
 }
 
+.btn-lg:hover{
+    background-color:#004497;
+    color: #fff;
+    transition: 0.4s;
+}
+
 .ml-auto{
     margin-left: auto!important;
 }

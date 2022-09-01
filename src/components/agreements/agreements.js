@@ -35,15 +35,7 @@ function Agreements() {
             <div className="type"style={{paddingLeft: "33px"}}>Обоюдное</div>
             <div className="data">11.01.11</div>
             <div className="data">11.11.11</div>
-            <div className="status">Активен
-              {/* <ul>
-                <div className="status_bt" style="visibility: hidden;">
-                  <button>Действующий</button>
-                  <button>Завершен</button>
-                  <button>Продлен</button>
-                </div>
-              </ul>  */}
-            </div>
+            <div className="status">Активен</div>
           </button>
           <div className="dopAgree">
             <div className="dop_itmAgree" style={{paddingLeft: "12px"}}>
@@ -97,10 +89,10 @@ function Agreements() {
               <button className="agree_itm fnt hv">Тип соглашения</button>
               <button className="fnt hv">Принять/Отклонить</button>
             </div>
-            <div className="agree_tab" style={{height: "50px", borderTop: "2px solid rgba(54,64,74,.15)"}}>
+            <div className="agree_tab" style={{height: "50px"}}>
               <div className="bt_deal hv">
-                <div className="agree_itm">Вид структуры</div>
-                <div className="agree_itm" style={{paddingLeft: "18px"}}>Короткое название</div>
+                <div className="agree_itm" style={{paddingLeft: "6px"}}>Вид структуры</div>
+                <div className="agree_itm">Короткое название</div>
                 <button className="agree_bt hv">+</button>
                 <button className="agree_bt hv">-</button>
               </div>
@@ -130,11 +122,15 @@ function ViewWindowNewAgreements(){
       <div className="add_agree" >
           <input type="text" placeholder="Тип соглашения" className="form-control" required />
           <input type="data" placeholder="Дата" className="form-control" required/>
-          <input type="text" placeholder="Партнеры" className="form-control" required/>
-          <input type="text" placeholder="Контакты партнеров" className="form-control" required/>
-          <input type="text" placeholder="Подразделения" className="form-control" required/>
-          <input type="text" placeholder="Контакты подразделений" className="form-control" required/>
-          <button className="add" style={{width: "auto"}}>Создать соглашение</button>
+          <div style={{paddingTop:"5px",paddingLeft: "10px", fontWeight: "500"}}>Контакты партнеров:</div>
+          <textarea name="" id="" cols="30" rows="2" className="form-control" style={{resize: "none"}}></textarea>
+          <div style={{paddingTop:"5px",paddingLeft: "10px", fontWeight: "500"}}>Контакты подразделений:</div>
+          <textarea name="" id="" cols="30" rows="2" className="form-control" style={{resize: "none"}}></textarea>
+          <div className="add_form_control"><input type="text" placeholder="Партнеры" class="form-control" required/><button class="form_bt hv">+</button></div>
+          <div style={{paddingTop: "6px", paddingLeft:"10px"}}>Перечень партнеров:</div>
+          <div className="add_form_control"><input type="text" placeholder="Подразделения" class="form-control" required/><button class="form_bt hv">+</button></div>
+          <div style={{paddingTop: "6px", paddingLeft:"10px"}}>Перечень подразделений:</div>
+          <button className="add" style={{width: "auto"}}>Сохранить</button>
       </div>
     </>
   )
